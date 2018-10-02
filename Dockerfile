@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache mariadb-client tini
+RUN apk add --no-cache mariadb-client tini pv bash
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
